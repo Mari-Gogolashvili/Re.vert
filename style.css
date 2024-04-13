@@ -1,0 +1,668 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,400;0,700;1,400&display=swap");
+
+:root {
+  --color_0: rgb(255, 255, 255);
+  --color_1: rgb(255, 255, 255);
+  --color_2: rgb(0, 0, 0);
+  --color_3: rgb(237, 28, 36);
+  --color_4: rgb(0, 136, 203);
+  --color_5: rgb(255, 203, 5);
+  --color_6: rgb(114, 114, 114);
+  --color_7: rgb(176, 176, 176);
+  --color_8: rgb(255, 255, 255);
+  --color_9: rgb(114, 114, 114);
+  --color_10: rgb(176, 176, 176);
+  --color_11: rgb(254, 250, 240);
+  --color_12: rgb(203, 200, 192);
+  --color_13: rgb(152, 150, 144);
+  --color_14: rgb(102, 100, 96);
+  --color_15: rgb(64, 63, 43);
+  --color_16: rgb(221, 221, 204);
+  --color_17: rgb(196, 193, 151);
+  --color_18: rgb(117, 117, 72);
+  --color_19: rgb(98, 98, 60);
+  --color_20: rgb(44, 69, 10);
+  --color_21: rgb(255, 253, 195);
+  --color_22: rgb(232, 229, 155);
+  --color_23: rgb(208, 205, 117);
+  --color_24: rgb(179, 175, 68);
+  --color_25: rgb(105, 102, 28);
+  --color_26: rgb(250, 225, 202);
+  --color_27: rgb(244, 166, 95);
+  --color_28: rgb(183, 125, 71);
+  --color_29: rgb(122, 83, 48);
+  --color_30: rgb(61, 42, 24);
+  --color_31: rgb(211, 177, 199);
+  --color_32: rgb(168, 127, 153);
+  --color_33: rgb(124, 64, 103);
+  --color_34: rgb(83, 43, 69);
+  --color_35: rgb(41, 21, 34);
+  --color_36: rgb(254, 250, 240);
+  --color_37: rgb(64, 63, 43);
+  --color_38: rgb(203, 200, 192);
+  --color_39: rgb(152, 150, 144);
+  --color_40: rgb(102, 100, 96);
+  --color_41: rgb(117, 117, 72);
+  --color_42: rgb(64, 63, 43);
+  --color_43: rgb(152, 150, 144);
+  --color_44: rgb(254, 250, 240);
+  --color_45: rgb(64, 63, 43);
+  --color_46: rgb(64, 63, 43);
+  --color_47: rgb(203, 200, 192);
+  --color_48: rgb(117, 117, 72);
+  --color_49: rgb(117, 117, 72);
+  --color_50: rgb(254, 250, 240);
+  --color_51: rgb(254, 250, 240);
+  --color_52: rgb(117, 117, 72);
+  --color_53: rgb(117, 117, 72);
+  --color_54: rgb(152, 150, 144);
+  --color_55: rgb(152, 150, 144);
+  --color_56: rgb(254, 250, 240);
+  --color_57: rgb(254, 250, 240);
+  --color_58: rgb(117, 117, 72);
+  --color_59: rgb(254, 250, 240);
+  --color_60: rgb(117, 117, 72);
+  --color_61: rgb(117, 117, 72);
+  --color_62: rgb(254, 250, 240);
+  --color_63: rgb(254, 250, 240);
+  --color_64: rgb(152, 150, 144);
+  --color_65: rgb(152, 150, 144);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: serif;
+  font-weight: 120;
+}
+
+/* ----------------heaader section starts ---------------*/
+
+nav {
+  background-color: rgb(255, 255, 255);
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+nav h2,
+nav h3 {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: var(--color_15);
+}
+nav .h4 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  color: var(--color_15);
+  font-size: 1.5rem;
+}
+
+nav h2:hover,
+nav h4:hover {
+  color: #939274;
+}
+nav i {
+  margin-right: 0.5rem;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(64, 63, 43, 0.365), rgba(64, 63, 43, 0.65)), url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner .content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.banner .content h1 {
+  color: var(--color_21);
+  font: serif;
+  letter-spacing: 0em;
+  font-size: 15rem;
+  text-align: center;
+}
+.banner .content p {
+  color: var(--color_11);
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.banner .content button {
+  background-color: var(--color_11);
+  border: 0.5px solid var(--color_15);
+  border-radius: 35px;
+  padding: 15px 25px;
+  color: #403f2b;
+  font-size: 1.9rem;
+  margin-top: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.banner .content button:hover {
+  background-color: var(--color_15);
+  color: var(--color_11);
+  transition: 0.4s;
+}
+
+/* ----------------header section ends----------------- */
+
+/*------------------carousel section starsts---------------- */
+.carousell {
+  margin: 5rem 0;
+}
+.carousel {
+  display: flex;
+  overflow-y: auto;
+  gap: 2rem;
+  width: 75%;
+  margin: auto;
+}
+.carousel img {
+  height: 25rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.hover {
+  position: relative;
+  display: inline-block;
+}
+.hover .hover_img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.hover:hover .hover_img {
+  display: inline;
+}
+.carousell h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--color_15);
+}
+
+.carousel h2,
+.carousel h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: var(--color_18);
+  margin-bottom: 1rem;
+}
+.carousel h3 {
+  margin-bottom: 3rem;
+}
+.carousel::-webkit-scrollbar {
+  height: 0.9rem;
+}
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--color_15);
+  border-radius: 30px;
+}
+
+/* ------------------carousel section ends---------------- */
+
+/* --------------Bath products section starts--------- */
+.bath {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color_17);
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+.bath img {
+  width: 34rem;
+  height: 32rem;
+  border-radius: 27px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: 3rem 0;
+}
+
+.bath .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--color_15);
+}
+.bath .content h1 {
+  font-size: 4.5rem;
+}
+.bath .content h2 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  font-weight: 120;
+}
+.bath .content button,
+.mission .svg button {
+  font-family: serif;
+  background-color: var(--color_15);
+  border: 0.5px solid var(--color_15);
+  border-radius: 35px;
+  padding: 15px 25px;
+  color: var(--color_11);
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bath .content button:hover,
+.mission .svg button:hover {
+  background-color: transparent;
+  color: var(--color_15);
+  transition: 0.4s;
+}
+
+/* --------------Bath products section ends-------------- */
+
+/* ---------------Shop Collection starts------------ */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  cursor: pointer;
+}
+.container .images {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.container .images img {
+  width: 28rem;
+  height: 27rem;
+  border-radius: 30px;
+  filter: brightness(75%);
+  transition: 2.5s ease;
+  transform: scale(1);
+}
+.container .images:hover img {
+  transform: scale(1.3);
+  overflow: hidden;
+}
+
+.container .images .text {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+.shop {
+  text-align: center;
+  line-height: 5rem;
+  margin: 2rem 0;
+  font-size: 3rem;
+  color: var(--color_15);
+}
+.container .images .text h1 {
+  color: var(--color_21);
+  font-size: 4.5rem;
+}
+.container .images .text p {
+  font-family: sans-serif;
+  color: var(--color_11);
+  font-size: 1.7em;
+  margin-top: 1.6rem;
+}
+/* ---------------Shop Collection ends------------ */
+
+/* <!------------------Mission section starts----------------> */
+.mission {
+  background-color: var(--color_16);
+  text-align: center;
+  width: 100%;
+  color: var(--color_15);
+  margin-top: 5rem;
+  padding: 2.5rem;
+}
+
+.mission h1 {
+  font-size: 3rem;
+}
+.mission h3 {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  width: 35%;
+  margin: 2rem auto;
+}
+.svg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.svg svg {
+  margin: 1.1rem 0;
+  display: flex;
+  height: 5rem;
+}
+
+.mission .svg h2 {
+  font-family: sans-serif;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+.mission .svg article p {
+  width: 50%;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+.mission .svg button {
+  font-family: sans-serif;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+}
+
+/* ------------------Mission section ends---------------- */
+
+/* ----------------- Weekend section starts------------------- */
+.weekend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 5rem;
+}
+.weekend .image {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.weekend .image img {
+  width: 90vw;
+  height: 115vh;
+  border-radius: 30px;
+  transition: 5.5s ease;
+  transform: scale(1);
+  filter: brightness(80%);
+  object-fit: cover;
+}
+.weekend .image img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.weekend .image .content {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.weekend .content h3 {
+  font-size: 3rem;
+  color: var(--color_11);
+  margin-bottom: 5rem;
+}
+.weekend .content h1 {
+  font-size: 14rem;
+  color: var(--color_21);
+}
+
+.weekend .content button {
+  padding: 10px 50px;
+  border-radius: 50px;
+  margin-top: 5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--color_15);
+}
+
+/* ----------------- Weekend section ends------------------- */
+
+/*-----------------------------footer section starts-----------------------*/
+
+.footer {
+  background-color: var(--color_22);
+  padding: 50px;
+}
+.footer .images {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  height: 20rem;
+  gap: 2rem;
+  object-fit: cover;
+  overflow-x: auto;
+}
+.footer .images img {
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.images::-webkit-scrollbar {
+  height: 0.9rem;
+}
+.images::-webkit-scrollbar-thumb {
+  background: var(--color_15);
+  border-radius: 50px;
+}
+
+.footer h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  color: var(--color_15);
+}
+.footer h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+  color: var(--color_15);
+}
+
+hr {
+  border: 1px solid var(--color_9);
+  margin: 3rem 0;
+  width: 100%;
+}
+.smth {
+  background-color: var(--color_22);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.links a {
+  color: var(--color_15);
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  font-family: sans-serif;
+}
+.first,
+.second,
+.third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.footer h3 {
+  font-size: 3rem;
+  max-width: 25rem;
+  color: var(--color_15);
+}
+
+.footer p {
+  color: var(--15);
+  font-family: sans-serif;
+  font-size: 1rem;
+  max-width: 50%;
+  margin: 2rem 0;
+}
+.footer button {
+  padding: 8px 23px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid var(--color_15);
+  opacity: 1;
+  cursor: pointer;
+}
+.footer button:hover {
+  opacity: 0.8;
+}
+input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid var(--color_15);
+  margin-top: 2rem;
+  padding: 0.3rem;
+}
+input:hover {
+  background-color: white;
+  border: 2px transparent;
+}
+
+span {
+  color: var(--color_15);
+  position: absolute;
+  font-size: 1rem;
+}
+/*------------------- footer section ends---------------- */
+
+/* -------------------------media----------------------- */
+
+@media (max-width: 1471px) {
+  .footer h3 {
+    text-align: center;
+  }
+  .emaill p {
+    text-align: center;
+    max-width: 90%;
+  }
+  .ccenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .smth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .emaill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1044px) {
+  .banner .content h1 {
+    font-size: 10rem;
+  }
+  .banner .content p {
+    font-size: 1.5em;
+  }
+
+  .bath .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .weekend .image img {
+    width: 95vw;
+    height: 70vh;
+  }
+  .weekend .content h1 {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 993px) {
+  .weekend .image img {
+    width: 95vw;
+    height: 60vh;
+  }
+  .weekend .content h1 {
+    font-size: clamp(2rem, 5vw, 6rem);
+  }
+}
+
+@media (max-width: 645px) {
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .bath img {
+    width: 24em;
+    height: 22em;
+  }
+}
+
+@media (max-width: 543px) {
+  .banner .content h1 {
+    font-size: 5rem;
+  }
+  .banner .content p {
+    font-size: 1.3em;
+  }
+
+  .weekend .image .content {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  .weekend .content h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+  .weekend .content h3 {
+    font-size: clamp(1rem, 5vw, 2rem);
+  }
+  .weekend button {
+    padding: 5px 10px;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 388px) {
+  .bath img {
+    width: 18em;
+    height: 15em;
+  }
+}
